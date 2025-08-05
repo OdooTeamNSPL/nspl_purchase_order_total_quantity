@@ -1,0 +1,18 @@
+<odoo>
+    <record id="view_purchase_order_form_inherit_received_billed" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit.received.billed</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook" position="after">
+                <group string="PO Quantities" col="2">
+                    <field name="total_demand_qty" readonly="1"/>
+                    <field name="total_received_qty" readonly="1"/>
+                    <field name="total_billed_qty" readonly="1"/>
+                    <field name="pending_bill_qty" readonly="1"/>
+                    <field name="pending_receipt_qty" readonly="1"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
