@@ -1,6 +1,6 @@
 {
     'name': 'Purchase Order total Quantity Summary',
-    'version': '18.0',
+    'version': '19.0.1',
     'description': """
 Purchase Order Quantity Summary
 This module enhances the Purchase Order form by adding a summary of key quantity fields for better tracking and decision making.
